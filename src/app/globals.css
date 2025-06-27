@@ -27,6 +27,7 @@ html {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-satoshi: "Satoshi";
+  --font-poppins: var(--font-poppins);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -140,4 +141,21 @@ html {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.button-border-gradient {
+  position: relative;
+}
+
+.button-border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(190deg, #ffffff, #5914a9);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
 }
