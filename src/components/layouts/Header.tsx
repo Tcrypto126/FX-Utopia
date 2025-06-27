@@ -44,7 +44,7 @@ const mainMenu: { title: string; href: string }[] = [
 
 const Header = () => {
   return (
-    <div className="w-full h-[112px] fixed left-0 top-0 pt-[32px] z-50 backdrop-blur-sm border">
+    <div className="w-full h-[112px] fixed left-0 top-0 pt-[32px] z-50 bg-[#00000040] backdrop-blur-sm">
       <div className="max-w-[1440px] m-auto flex gap-2 items-center justify-between">
         <Link href="/">
           <Image
@@ -59,18 +59,18 @@ const Header = () => {
           <NavigationMenuList className="gap-8">
             {mainMenu.map((item) => (
               <NavigationMenuItem key={item.title}>
-                <NavigationMenuLink className="hover:!bg-transparent !text-[14px]">
+                <NavigationMenuLink>
                   <Link href={item.href}>{item.title}</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex gap-3 justify-end items-center">
-          <Button>
+        <div className="flex gap-3 justify-end items-center py-1">
+          <Button variant="login" className="button-border-gradient">
             Login
           </Button>
-          <Button>Sign up</Button>
+          <Button variant="signup">Sign up</Button>
         </div>
       </div>
     </div>
