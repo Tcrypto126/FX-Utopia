@@ -38,6 +38,7 @@ function NavigationMenuList({
       data-slot="navigation-menu-list"
       className={cn(
         "group flex flex-1 list-none items-center justify-center gap-1",
+        "gap-3 xl:gap-8",
         className
       )}
       {...props}
