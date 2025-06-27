@@ -2,20 +2,20 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import EmblaCarousel from "./EmblaCarousel";
+import BrandCarousel from "./BrandCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "./css/embla.css";
 
 import Container from "../layouts/Container";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 6;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const BrandSection = () => {
   return (
     <Container>
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <BrandCarousel slides={SLIDES} options={OPTIONS} />
     </Container>
   );
 };
