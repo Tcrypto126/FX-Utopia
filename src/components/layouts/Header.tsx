@@ -51,7 +51,7 @@ const mainMenu: { title: string; link: string }[] = [
 
 const Header = () => {
   return (
-    <div className="w-full h-[80px] lg:h-[112px] fixed left-0 top-0 flex items-center z-50 px-3 bg-[#00000040] backdrop-blur-sm">
+    <div className="w-full h-[64px] lg:h-[112px] fixed left-0 top-0 flex items-center z-50 px-3 bg-[#00000040] backdrop-blur-sm">
       <div className="max-w-[1440px] w-full m-auto flex gap-2 items-center justify-between">
         <Link href="/">
           <Image
@@ -124,7 +124,7 @@ const Header = () => {
         </div>
 
         <div className="hidden lg:flex gap-3 justify-end items-center py-1">
-          <Button variant="login" className="button-border-gradient">
+          <Button variant="login" className="login-button">
             Login
           </Button>
           <Button variant="signup">Sign up</Button>
