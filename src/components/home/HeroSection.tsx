@@ -59,13 +59,13 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-[1440px] w-full mx-auto px-3 pt-[140px] lg:pt-[192px] relative z-30 flex flex-col items-center gap-3">
-        <h1 className="text-[20px] md:text-[24px] lg:text-[36px] font-riosark font-[400] text-center">
+        <h2 className="!text-[20px] md:!text-[24px] lg:!text-[36px]">
           WELCOME TO THE FUTURE OF
-        </h1>
-        <h1 className="text-[48px] md:text-[64px] lg:text-[120px] font-riosark font-[400] text-center leading-[100%] bg-gradient-to-r from-[#4E4EE41A] via-[#ffffff] to-[#4E4EE41A] bg-clip-text text-transparent">
+        </h2>
+        <h5 className="text-[48px] md:text-[64px] lg:text-[120px] font-riosark font-[400] text-center leading-[100%] bg-gradient-to-r from-[#4E4EE41A] via-[#ffffff] to-[#4E4EE41A] bg-clip-text text-transparent">
           FINANCIAL FREEDOM
-        </h1>
-        <p className="text-[16px] md:text-[18px] font-[400] text-center max-w-[1224px]">
+        </h5>
+        <p className="text-center max-w-[1224px]">
           At FX Utopia, we&apos;re building the most dynamic and empowering
           Forex & Crypto community on the planet. Whether you&apos;re just
           getting started or looking to sharpen your edge, our platform delivers

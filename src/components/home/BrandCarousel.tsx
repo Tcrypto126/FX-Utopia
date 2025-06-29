@@ -56,7 +56,7 @@ const BrandCarousel: React.FC<PropType> = (props) => {
               <div className="embla__slide__number">
                 <div className="flex flex-col items-center justify-center gap-4">
                   {item.icon}
-                  <h4 className="font-[700] text-[18px]">{item.text}</h4>
+                  <h5 className="font-[700] text-[18px]">{item.text}</h5>
                 </div>
               </div>
             </div>

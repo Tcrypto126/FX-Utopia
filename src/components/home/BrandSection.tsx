@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import ReactDOM from "react-dom/client";
 import BrandCarousel from "./BrandCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "./css/embla.css";
@@ -14,7 +13,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const BrandSection = () => {
   return (
-    <Container>
+    <Container className="bg-[#000000]">
       <BrandCarousel slides={SLIDES} options={OPTIONS} />
     </Container>
   );
