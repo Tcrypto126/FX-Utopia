@@ -41,6 +41,7 @@
 .embla_trust {
   /* max-width: 50vw; */
   width: 50vw;
+  overflow: hidden;
   --slide-height: 108px;
   --slide-spacing: 64px;
   --slide-size: 172px;
