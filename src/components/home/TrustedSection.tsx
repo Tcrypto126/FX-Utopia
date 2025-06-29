@@ -7,35 +7,62 @@ import { EmblaOptionsType } from "embla-carousel";
 import "./css/embla.css";
 import { ScrollToIcon } from "../ui/icon";
 
-const TrustedSection = () => {
-  const OPTIONS1: EmblaOptionsType = {
-    dragFree: true,
-    loop: true,
-  };
-  const OPTIONS2: EmblaOptionsType = {
-    dragFree: true,
-    direction: "rtl",
-    loop: true,
-  };
-  const SLIDESLEFT = [
-    "/assets/home/Icon1.png",
-    "/assets/home/Icon2.png",
-    "/assets/home/Icon3.png",
-    "/assets/home/Icon4.png",
-    "/assets/home/Icon5.png",
-    "/assets/home/Icon4.png",
-    "/assets/home/Icon5.png",
-  ];
-  const SLIDESRIGHT = [
-    "/assets/home/Icon7.png",
-    "/assets/home/Icon8.png",
-    "/assets/home/Icon9.png",
-    "/assets/home/Icon10.png",
-    "/assets/home/Icon11.png",
-    "/assets/home/Icon8.png",
-    "/assets/home/Icon9.png",
-  ];
+const OPTIONS1: EmblaOptionsType = {
+  dragFree: true,
+  loop: true,
+};
+const OPTIONS2: EmblaOptionsType = {
+  dragFree: true,
+  direction: "rtl",
+  loop: true,
+};
+const SLIDESLEFT = [
+  "/assets/home/Icon1.png",
+  "/assets/home/Icon2.png",
+  "/assets/home/Icon3.png",
+  "/assets/home/Icon4.png",
+  "/assets/home/Icon5.png",
+  "/assets/home/Icon4.png",
+  "/assets/home/Icon5.png",
+];
+const SLIDESRIGHT = [
+  "/assets/home/Icon7.png",
+  "/assets/home/Icon8.png",
+  "/assets/home/Icon9.png",
+  "/assets/home/Icon10.png",
+  "/assets/home/Icon11.png",
+  "/assets/home/Icon8.png",
+  "/assets/home/Icon9.png",
+];
+const FEATURES = [
+  {
+    icon: "/assets/home/featured1.png",
+    title: "Signal Sharing Platform",
+    text: "Access high-quality trading signals from verified professionals",
+  },
+  {
+    icon: "/assets/home/featured2.png",
+    title: "Marketplace for Traders",
+    text: "Buy and sell trading tools, indicators, and strategies",
+  },
+  {
+    icon: "/assets/home/featured3.png",
+    title: "Broker Reviews & Tools ",
+    text: "Transparent reviews and comparison tools for brokers",
+  },
+  {
+    icon: "/assets/home/featured4.png",
+    title: "Education Resources",
+    text: "Free courses, webinars, and guides for all levels",
+  },
+  {
+    icon: "/assets/home/featured5.png",
+    title: "Market Updates & News",
+    text: "Stay informed with real-time market analysis",
+  },
+];
 
+const TrustedSection = () => {
   return (
     <div className="w-full h-fit relative z-0">
       <Image
@@ -106,69 +133,26 @@ const TrustedSection = () => {
           <p className="mt-[24px] text-center">
             Everything a Crypto and Forex Traders Enthusiast Needs
           </p>
-          <div className="mt-[32px] md:mt-[100px] max-w-[100%] lg:max-w-[90%] flex flex-col lg:flex-row gap-4 justify-between">
-            <div className="p-4 flex flex-col max-w-[100%] lg:max-w-[300px] gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] rounded-[12px]">
-              <Image
-                src="/assets/home/featured1.png"
-                width={52}
-                height={52}
-                alt="featured"
-              />
-              <h5 className="text-[22px] font-riosark leading-[36px]">
-                Signal Sharing Platform
-              </h5>
-              <p>
-                Access high-quality trading signals from verified professionals
-              </p>
-            </div>
-            <div className="p-4 flex flex-col max-w-[100%] lg:max-w-[300px] gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] rounded-[12px]">
-              <Image
-                src="/assets/home/featured2.png"
-                width={52}
-                height={52}
-                alt="featured"
-              />
-              <h5 className="text-[22px] font-riosark leading-[36px]">
-                Marketplace for Traders
-              </h5>
-              <p>Buy and sell trading tools, indicators, and strategies</p>
-            </div>
-            <div className="p-4 flex flex-col max-w-[100%] lg:max-w-[300px] gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] rounded-[12px]">
-              <Image
-                src="/assets/home/featured3.png"
-                width={52}
-                height={52}
-                alt="featured"
-              />
-              <h5 className="text-[22px] font-riosark leading-[36px]">
-                Broker Reviews & Tools
-              </h5>
-              <p>Transparent reviews and comparison tools for brokers</p>
-            </div>
-            <div className="p-4 flex flex-col max-w-[100%] lg:max-w-[300px] gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] rounded-[12px]">
-              <Image
-                src="/assets/home/featured4.png"
-                width={52}
-                height={52}
-                alt="featured"
-              />
-              <h5 className="text-[22px] font-riosark leading-[36px]">
-                Education Resources
-              </h5>
-              <p>Free courses, webinars, and guides for all levels</p>
-            </div>
-            <div className="p-4 flex flex-col max-w-[100%] lg:max-w-[300px] gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] rounded-[12px]">
-              <Image
-                src="/assets/home/featured5.png"
-                width={52}
-                height={52}
-                alt="featured"
-              />
-              <h5 className="text-[22px] font-riosark leading-[36px]">
-                Market Updates & News
-              </h5>
-              <p>Stay informed with real-time market analysis</p>
-            </div>
+          <div className="mt-[32px] lg:mt-[100px] w-full flex flex-col lg:flex-row gap-4 justify-between">
+            {FEATURES.map((item) => (
+              <div
+                key={item.title}
+                className="feature-card overflow-hidden flex justify-center items-center relative z-0 w-full lg:max-w-[298px] p-0.5 rounded-[12px]"
+              >
+                <div className="p-4 relative z-1 flex flex-col w-full h-full gap-4 bg-gradient-to-b from-[#2C0B48] to-[#09030E] border-[1px] border-[#361056] hover:border-[#00F2FF] rounded-[12px] transition-all duration-300">
+                  <Image
+                    src={item.icon}
+                    width={52}
+                    height={52}
+                    alt="featured"
+                  />
+                  <h5 className="text-[22px] font-riosark leading-[36px]">
+                    {item.title}
+                  </h5>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

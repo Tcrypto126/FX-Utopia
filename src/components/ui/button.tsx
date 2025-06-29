@@ -25,7 +25,7 @@ const buttonVariants = cva(
         signup:
           "!h-[48px] !px-6 !text-[16px] !text-black !font-poppins font-[600] rounded-full cursor-pointer bg-[#ffffff] hover:shadow-[0_0_15px_#ffffff90]",
         common:
-          "rounded-full !h-[58px] !px-[51px] !text-[16px] !font-[500] bg-[#381E5B] hover:bg-[#4f3473]",
+          "rounded-full !h-[58px] !text-[16px] !font-[500] bg-[#381E5B] hover:bg-[#4f3473]",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

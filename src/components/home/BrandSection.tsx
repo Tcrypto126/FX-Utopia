@@ -16,7 +16,7 @@ const BrandSection = () => {
     <Container className="bg-[#000000]">
       <BrandCarousel slides={SLIDES} options={OPTIONS} />
     </Container>
-  );
+  )
 };
 
 export default BrandSection;

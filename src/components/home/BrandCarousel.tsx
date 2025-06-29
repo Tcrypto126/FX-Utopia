@@ -64,7 +64,7 @@ const BrandCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default BrandCarousel;

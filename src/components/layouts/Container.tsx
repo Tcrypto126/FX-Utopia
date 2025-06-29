@@ -2,16 +2,6 @@
 
 import React from "react";
 
-const InnerContainer = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => (
-  <div className={`max-w-[1440px] m-auto ${className || ""}`}>{children}</div>
-);
-
 const Container = ({
   children,
   className,
@@ -21,7 +11,7 @@ const Container = ({
 }) => {
   return (
     <div className={`w-full px-3 ${className || ""}`}>
-      <InnerContainer>{children}</InnerContainer>
+      <div className="max-w-[1440px] w-full mx-auto">{children}</div>
     </div>
   );
 };

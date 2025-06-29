@@ -71,7 +71,7 @@ const HeroSection = () => {
           getting started or looking to sharpen your edge, our platform delivers
           everything you need to succeed.
         </p>
-        <Button variant="common" className="common-button mt-[16px]">
+        <Button variant="common" className="common-button !w-[247px] mt-[16px]">
           Join The Community
         </Button>
         <Image
